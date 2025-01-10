@@ -2,7 +2,7 @@ import {test,expect, Page} from '@playwright/test'
 import {faker} from '@faker-js/faker'
 import FakerGenerator from '../Utilities/FakerGenerator'
 import RegisterFeatures from '../pages/Registration_Feature'
-import { before } from 'node:test'
+//import { before } from 'node:test'
 
 
 
@@ -34,7 +34,7 @@ enum LoginErrors{
 
 
 test.describe('Smoke test for the core functionalities',()=>{
-    test.only(' successful new user registration ', async ({ page }) => {
+    test(' successful new user registration ', async ({ page }) => {
         //signup = new RegisterFeatures(page)
         await page.goto('/');
         await signup.clickLogin()

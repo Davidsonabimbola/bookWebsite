@@ -11,10 +11,10 @@ interface oldUser_credentials{
     password: string
 }
 
-const regUser: oldUser_credentials ={
-    username : 'Fredg',
-    password: '12.Nopassword.12'
-  }
+// const regUser: oldUser_credentials ={
+//     username : 'Fredg',
+//     password: '12.Nopassword.12'
+//   }
 
 
 enum LoginErrors{

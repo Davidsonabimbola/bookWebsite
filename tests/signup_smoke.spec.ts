@@ -6,11 +6,6 @@ import RegisterFeatures from '../pages/Registration_Feature'
 
 
 
-interface oldUser_credentials{
-    username: string,
-    password: string
-}
-
 // const regUser: oldUser_credentials ={
 //     username : 'Fredg',
 //     password: '12.Nopassword.12'

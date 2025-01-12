@@ -11,7 +11,7 @@ test.beforeEach(async({page})=>{
   })
 
 test.describe('to validate login features',()=>{
-    test.only('successful login with valid credentials',async({page})=>{
+    test('successful login with valid credentials',async({page})=>{
     const validCreds = credentials.validCredentials()
     await page.goto('/');
     await login.clickLogin()
@@ -21,6 +21,14 @@ test.describe('to validate login features',()=>{
     })
 
 
+    test('unsuccessful login with invalid credentials',async({page})=>{
+      const invalidCreds = credentials.invalidCredentials()
+      await page.goto('/');
+      await login.clickLogin()
+      await login.enter_UserName(invalidCreds.username)
+      await login.enter_Password(invalidCreds.password)
+      await login.clickLogin_again()
+      })
 
 
 

@@ -1,7 +1,7 @@
 import {faker} from '@faker-js/faker'
-interface userDetails  {
-    firstName: string
-    lastName:string
+export interface userDetails  {
+    firstName: string,
+    lastName:string,
     userName: any,
     password:any
 }

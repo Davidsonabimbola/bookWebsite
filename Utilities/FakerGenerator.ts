@@ -14,6 +14,7 @@ export interface userDetails  {
             lastName: faker.person.lastName(),
             userName: faker.internet.displayName(),
             password: faker.internet.password()
+            
         }
         
     }

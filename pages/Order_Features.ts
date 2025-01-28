@@ -13,9 +13,6 @@ export class OrderFeatures{
     private shipping_zipCodeField : Locator
     private shipping_stateField : Locator
 
-    
-
-
 
     constructor(page:Page){
         this.page = page
